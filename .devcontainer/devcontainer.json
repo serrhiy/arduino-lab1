@@ -1,0 +1,22 @@
+{
+    "name": "arduino-lab1",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "runArgs": [
+        "--hostname=debian"
+    ],
+    "updateRemoteUserUID": true,
+    // Runs inside the created container, after the image is built and the
+    // workspace bind mount is available. Unlike Dockerfile RUN steps, this
+    // can see the cloned repo, so resolves against the real platformio.ini
+    "postCreateCommand": "pio pkg install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Wokwi.wokwi-vscode",
+                "platformio.platformio-ide"
+            ]
+        }
+    }
+}
