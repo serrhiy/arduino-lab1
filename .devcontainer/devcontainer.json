@@ -4,7 +4,8 @@
         "dockerfile": "Dockerfile"
     },
     "runArgs": [
-        "--hostname=debian"
+        "--hostname=debian",
+        "--network=host"
     ],
     "updateRemoteUserUID": true,
     // Runs inside the created container, after the image is built and the
