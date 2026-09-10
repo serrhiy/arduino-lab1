@@ -8,8 +8,8 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/workspaces/lab1/include",
                 "/workspaces/lab1/src",
+                "/workspaces/lab1/lib/morse",
                 "/home/dev/.platformio/packages/framework-arduino-avr/cores/arduino",
                 "/home/dev/.platformio/packages/framework-arduino-avr/variants/standard",
                 "/home/dev/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
@@ -22,8 +22,8 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/workspaces/lab1/include",
                     "/workspaces/lab1/src",
+                    "/workspaces/lab1/lib/morse",
                     "/home/dev/.platformio/packages/framework-arduino-avr/cores/arduino",
                     "/home/dev/.platformio/packages/framework-arduino-avr/variants/standard",
                     "/home/dev/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
@@ -44,7 +44,7 @@
                 ""
             ],
             "cStandard": "gnu11",
-            "cppStandard": "gnu++11",
+            "cppStandard": "gnu++17",
             "compilerPath": "/home/dev/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
             "compilerArgs": [
                 "-mmcu=atmega328p",

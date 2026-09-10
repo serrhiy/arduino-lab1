@@ -46,8 +46,8 @@ class Button final
     }
 };
 
-constexpr uint8_t led = 12;
-Button button{2};
+constexpr uint8_t led = 2;
+Button button{3};
 
 void setup()
 {

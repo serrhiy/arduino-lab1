@@ -3,7 +3,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
-mapfile -d '' files < <(find src include -type f \
+mapfile -d '' files < <(find src include lib -type f \
     \( -name '*.c' -o -name '*.cc' -o -name '*.cpp' -o -name '*.cxx' \
     -o -name '*.h' -o -name '*.hh' -o -name '*.hpp' \) -print0)
 
