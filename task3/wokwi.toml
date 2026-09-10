@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = '../.pio/build/task3/firmware.hex'
+elf = '../.pio/build/task3/firmware.elf'

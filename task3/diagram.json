@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Lytvynenko Serhii, IM-31. Lab #1",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0.6, "left": -10.2, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -128.4,
+      "left": 128.6,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -52.8,
+      "left": 114.65,
+      "rotate": 90,
+      "attrs": { "value": "200" }
+    }
+  ],
+  "connections": [
+    [ "uno:9", "led1:A", "red", [ "v0" ] ],
+    [ "led1:C", "r1:1", "black", [ "v0" ] ],
+    [ "r1:2", "uno:GND.1", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
